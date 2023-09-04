@@ -6,8 +6,6 @@ export interface NotificacaoInstance extends Model {
     titulo: string;
     corpo: string;
     mostrar: boolean;
-
-
 }
 
 export const Notificacao = sequelize.define<NotificacaoInstance>('Notificacao', {
