@@ -1,0 +1,60 @@
+Para rodar o projeto
+
+npm install
+
+npm install typescript ts-node express @types/node @types/express
+
+npm install nodemon
+
+npm run start-dev
+
+Rota: /ping
+Método: GET
+Descrição: Esta rota é utilizada para verificar se o servidor da API está ativo e em execução.
+Utilização: Acesse esta rota usando um cliente HTTP (por exemplo, Postman ou seu navegador) para verificar a disponibilidade do servidor.
+Rota: /cadastrarUsuario
+Método: POST
+Descrição: Utilize esta rota para cadastrar um novo usuário na aplicação.
+Parâmetros: Envie os dados do usuário no corpo da requisição em formato JSON.
+Exemplo de requisição:
+{
+"nome": "Nome do Usuário",
+"email": "usuario@example.com",
+"senha": "senha123"
+}
+
+Rota: /fazerLogin
+Método: POST
+Descrição: Utilize esta rota para autenticar um usuário e realizar o login.
+Parâmetros: Envie o email e senha do usuário no corpo da requisição em formato JSON.
+Exemplo de requisição:
+{
+"email": "usuario@example.com",
+"senha": "senha123"
+}
+
+Rota: /listarEmails
+Método: GET
+Descrição: Esta rota retorna uma lista de emails de todos os usuários cadastrados na aplicação.
+Rota: /listarTodosUsuarios
+Método: GET
+Descrição: Utilize esta rota para listar todos os usuários cadastrados na aplicação.
+Rota: /deletarUsuario/:id
+Método: DELETE
+Descrição: Esta rota permite a exclusão de um usuário específico com base no seu ID.
+Parâmetros: O ID do usuário a ser excluído deve ser especificado na URL da requisição.
+Rota: /atualizarUsuario/:id
+Método: PUT
+Descrição: Utilize esta rota para atualizar os dados de um usuário específico com base no seu ID.
+Parâmetros: O ID do usuário a ser atualizado deve ser especificado na URL da requisição, e os novos dados devem ser enviados no corpo da requisição em formato JSON.
+Rota: /pegarUsuarioPeloId/:id
+Método: GET
+Descrição: Esta rota permite obter os dados de um usuário específico com base no seu ID.
+Parâmetros: O ID do usuário desejado deve ser especificado na URL da requisição.
+Rota: /mostrarNotificacao
+Método: GET
+Descrição: Utilize esta rota para listar as notificações disponíveis na aplicação.
+Rota: /atualizarNotificacao
+Método: PATCH
+Descrição: Esta rota permite atualizar uma notificação específica.
+Parâmetros: Envie os novos dados da notificação no corpo da requisição em formato JSON, incluindo o ID da notificação que deseja atualizar.
