@@ -6,6 +6,8 @@ API que irei usar nas aula de DESKTOP
 
 Use o NPM para fazer a instalação das bibliotecas após baixar o repositório
 
+!!! IMPORTANTE, crie as tabelas no seu banco de dados igual no arquivo tabelas.sql
+
 ```bash
 npm install
 ```
